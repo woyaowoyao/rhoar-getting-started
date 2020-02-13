@@ -1,4 +1,4 @@
-mvn fabric8:build
+ mvn package -DskipTest fabric8:build
 = Circuit Breaker - Spring Boot Example Application
 
 IMPORTANT: This runs best when deployed to OpenShift in order to use the circuit breaker functionality. For more details on using this example application with a single-node OpenShift cluster, CI/CD deployments, as well as the rest of the runtime, see the link:http://launcher.fabric8.io/docs/spring-boot-runtime.html[Spring Boot Runtime Guide].
