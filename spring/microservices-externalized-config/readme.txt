@@ -1,0 +1,1 @@
+oc create configmap app-config --from-file=greeting-service/src/main/etc/application.properties

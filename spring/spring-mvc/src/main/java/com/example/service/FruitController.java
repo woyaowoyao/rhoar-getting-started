@@ -23,7 +23,10 @@ public class FruitController {
     // TODO POST mapping here
     @PostMapping
     public String createFruit(@ModelAttribute Fruit fruit) {
-        fruits.add(fruit);
+        if(fruits.stream().noneMatch(f -> f.getName().equalsIgnoreCase(fruit.getName()))) {
+            fruits.add(fruit);
+        }
+        //fruits.add(fruit);
         return "redirect:/fruits";
     }
 }
