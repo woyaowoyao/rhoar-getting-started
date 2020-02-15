@@ -91,7 +91,19 @@
 								</goals>
 							</execution>
 						</executions>
-						<!-- TODO: Add label here-->
+						    <configuration>
+        <resources>
+            <labels> 
+              <all> 
+                <property> 
+                  <name>name</name>
+                  <value>auto-discover</value>
+                </property>
+              </all>
+            </labels>
+        </resources>
+    </configuration>
+
 					</plugin>
 				</plugins>
 			</build>

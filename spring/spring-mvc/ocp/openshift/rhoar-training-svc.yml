@@ -1,0 +1,27 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    fabric8.io/git-commit: e0a6bedfb1d80d2886d21457e98e8488d3eec99b
+    fabric8.io/iconUrl: img/icons/spring-boot.svg
+    fabric8.io/git-branch: master
+    prometheus.io/scrape: "true"
+    prometheus.io/port: "9779"
+  labels:
+    expose: "true"
+    app: rhoar-training
+    provider: fabric8
+    version: 0.0.1-SNAPSHOT
+    group: com.example
+  name: rhoar-training
+spec:
+  ports:
+  - name: http
+    port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: rhoar-training
+    provider: fabric8
+    group: com.example
