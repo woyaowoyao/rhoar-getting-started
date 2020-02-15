@@ -7,3 +7,6 @@ oc create -f ./service.json
 oc expose service/discovery-service
 
 oc describe service discovery-service
+
+cd cd ./eureka-client
+mvn package -Dfabric8.openshift.trimImageInContainerSpec fabric8:deploy -Popenshift

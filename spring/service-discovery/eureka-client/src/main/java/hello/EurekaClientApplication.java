@@ -33,4 +33,8 @@ class ServiceInstanceRestController {
         return this.discoveryClient.getInstances(applicationName);
     }
     //TODO: Add load balance endpoint here
+    @RequestMapping("/loadBalanceTest")
+    public String loadBalanceTest() {
+        return "Sucessfully accessed the application through a load balancer!";
+    }
 }
