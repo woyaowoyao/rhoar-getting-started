@@ -70,7 +70,7 @@
     </fabric8.generator.from>
   </properties>
 
-  <dependencyManagement>
+ <!--  <dependencyManagement>
     <dependencies>
       <dependency>
         <groupId>me.snowdrop</groupId>
@@ -80,7 +80,7 @@
         <scope>import</scope>
       </dependency>
     </dependencies>
-  </dependencyManagement>
+  </dependencyManagement> -->
 
   <dependencies>
     <dependency>
